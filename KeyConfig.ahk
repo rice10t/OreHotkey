@@ -7,10 +7,10 @@ vk1Dsc07B & j:: SendKeyDown("Down")
 vk1Dsc07B & k:: SendKeyDown("Up")
 vk1Dsc07B & l:: SendKeyDown("Right")
 
-;無変換 + m = Backspace
+;無変換 + n = Backspace
 vk1Dsc07B & n:: SendKeyDown("Backspace")
 
-;無変換 + , = Delete
+;無変換 + m = Delete
 vk1Dsc07B & m:: SendKeyDown("Delete")
 
 ;無変換 + 変換 = Escape
@@ -19,7 +19,7 @@ vk1Dsc07B & vk1Csc079:: SendKeyDown("Escape")
 ;無変換 + Space = Enter
 vk1Dsc07B & Space:: SendKeyDown("Enter")
 
-;capslock無効
+;Capslock無効
 vkF0sc03A:: Return
 
 ;無変換でIMEオフ

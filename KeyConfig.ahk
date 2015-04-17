@@ -29,8 +29,10 @@ vk1Dsc07B:: IME_Set(0)
 vk1Csc079:: IME_Set(1)
 
 ;渡されたキーを入力する。Blindを付加しているので、修飾キー(ShiftやCtrl)と同時に押すことも可能。
+;参考:http://ahkwiki.net/Remap
 SendKeyDown(key)
 {
+	SetKeyDelay -1
 	Send, {Blind}{%key%}
 }
 

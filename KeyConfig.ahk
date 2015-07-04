@@ -19,6 +19,7 @@ vk1Dsc07B & m:: SendKeyDown("Delete")
 
 ;無変換 + 変換 = Escape
 vk1Dsc07B & vk1Csc079:: SendKeyDown("Escape")
+vk1Csc079 & vk1Dsc07B:: SendKeyDown("Escape")
 
 ;無変換 + Space = Enter
 vk1Dsc07B & Space:: SendKeyDown("Enter")

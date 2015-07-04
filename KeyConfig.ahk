@@ -7,6 +7,10 @@ vk1Dsc07B & j:: SendKeyDown("Down")
 vk1Dsc07B & k:: SendKeyDown("Up")
 vk1Dsc07B & l:: SendKeyDown("Right")
 
+;変換 + jk = Page Up/Down
+vk1Csc079 & j:: SendKeyDown("PgDn")
+vk1Csc079 & k:: SendKeyDown("PgUp")
+
 ;無変換 + n = Backspace
 vk1Dsc07B & n:: SendKeyDown("Backspace")
 

@@ -1,7 +1,6 @@
 #include IME.ahk 
 
 ;無変換 + hjkl = ←↓↑→
-
 vk1Dsc07B & h:: SendKeyDown("Left")
 vk1Dsc07B & j:: SendKeyDown("Down")
 vk1Dsc07B & k:: SendKeyDown("Up")

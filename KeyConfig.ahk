@@ -1,4 +1,4 @@
-#include IME.ahk 
+#include IME.ahk
 
 ;無変換 + hjkl = ←↓↑→
 vk1Dsc07B & h:: SendKeyDown("Left")
@@ -9,6 +9,9 @@ vk1Dsc07B & l:: SendKeyDown("Right")
 ;変換 + jk = Page Up/Down
 vk1Csc079 & j:: SendKeyDown("PgDn")
 vk1Csc079 & k:: SendKeyDown("PgUp")
+
+;変換 + l = End
+vk1Csc079 & l:: SendKeyDown("End")
 
 ;無変換 + n = Backspace
 vk1Dsc07B & n:: SendKeyDown("Backspace")

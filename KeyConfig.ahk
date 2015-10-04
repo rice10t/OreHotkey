@@ -10,6 +10,8 @@ vk1Dsc07B & l:: SendKeyDown("Right")
 vk1Csc079 & j:: SendKeyDown("PgDn")
 vk1Csc079 & k:: SendKeyDown("PgUp")
 
+;変換 + l = Home
+vk1Csc079 & h:: SendKeyDown("Home")
 ;変換 + l = End
 vk1Csc079 & l:: SendKeyDown("End")
 

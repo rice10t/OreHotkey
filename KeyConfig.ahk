@@ -25,6 +25,14 @@ vk1Dsc07B & m:: SendKeyDown("Delete")
 vk1Dsc07B & vk1Csc079:: SendKeyDown("Escape")
 vk1Csc079 & vk1Dsc07B:: SendKeyDown("Escape")
 
+;ctrl + [ = Escape
+;SendKeyDownを使うとなぜかスタートメニューが表示されてしまうので使わない
+;Send, {Blind}{Escape} が悪いっぽい
+^[:: 
+SetKeyDelay -1
+Send, {Escape}
+Return
+
 ;無変換 + Space = Enter
 vk1Dsc07B & Space:: SendKeyDown("Enter")
 

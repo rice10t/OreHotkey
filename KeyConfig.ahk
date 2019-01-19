@@ -21,10 +21,6 @@ vk1D & n:: SendKeyDown("Backspace")
 ;無変換 + m = Delete
 vk1D & m:: SendKeyDown("Delete")
 
-;無変換 + 変換 = Escape
-vk1D & vk1C:: SendKeyDown("Escape")
-vk1C & vk1D:: SendKeyDown("Escape")
-
 ;ctrl + [ = Escape
 ;SendKeyDownを使うとなぜかスタートメニューが表示されてしまうので使わない
 ;Send, {Blind}{Escape} が悪いっぽい

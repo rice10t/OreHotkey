@@ -1,29 +1,29 @@
 #include IME.ahk
 
 ;無変換 + hjkl = ←↓↑→
-vk1Dsc07B & h:: SendKeyDown("Left")
-vk1Dsc07B & j:: SendKeyDown("Down")
-vk1Dsc07B & k:: SendKeyDown("Up")
-vk1Dsc07B & l:: SendKeyDown("Right")
+vk1D & h:: SendKeyDown("Left")
+vk1D & j:: SendKeyDown("Down")
+vk1D & k:: SendKeyDown("Up")
+vk1D & l:: SendKeyDown("Right")
 
 ;変換 + jk = Page Up/Down
-vk1Csc079 & j:: SendKeyDown("PgDn")
-vk1Csc079 & k:: SendKeyDown("PgUp")
+vk1C & j:: SendKeyDown("PgDn")
+vk1C & k:: SendKeyDown("PgUp")
 
 ;変換 + h = Home
-vk1Csc079 & h:: SendKeyDown("Home")
+vk1C & h:: SendKeyDown("Home")
 ;変換 + l = End
-vk1Csc079 & l:: SendKeyDown("End")
+vk1C & l:: SendKeyDown("End")
 
 ;無変換 + n = Backspace
-vk1Dsc07B & n:: SendKeyDown("Backspace")
+vk1D & n:: SendKeyDown("Backspace")
 
 ;無変換 + m = Delete
-vk1Dsc07B & m:: SendKeyDown("Delete")
+vk1D & m:: SendKeyDown("Delete")
 
 ;無変換 + 変換 = Escape
-vk1Dsc07B & vk1Csc079:: SendKeyDown("Escape")
-vk1Csc079 & vk1Dsc07B:: SendKeyDown("Escape")
+vk1D & vk1C:: SendKeyDown("Escape")
+vk1C & vk1D:: SendKeyDown("Escape")
 
 ;ctrl + [ = Escape
 ;SendKeyDownを使うとなぜかスタートメニューが表示されてしまうので使わない
@@ -34,16 +34,16 @@ Send, {Escape}
 Return
 
 ;無変換 + Space = Enter
-vk1Dsc07B & Space:: SendKeyDown("Enter")
+vk1D & Space:: SendKeyDown("Enter")
 
 ;Capslock無効
-vkF0sc03A:: Return
+vkF0:: Return
 
 ;無変換でIMEオフ
-vk1Dsc07B:: IME_Set(0)
+vk1D:: IME_Set(0)
 
 ;変換でIMEオン
-vk1Csc079:: IME_Set(1)
+vk1C:: IME_Set(1)
 
 ;Windowsショートカットを無効化
 

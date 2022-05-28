@@ -43,7 +43,7 @@ vk1C::Send, {vk16}
 
 
 ;渡されたキーを入力する。Blindを付加しているので、修飾キー(ShiftやCtrl)と同時に押すことも可能。
-;参考:http://ahkwiki.net/Remap
+;参考: https://www.autohotkey.com/docs/commands/Send.htm#blind
 SendKeyDown(key)
 {
 	SetKeyDelay -1

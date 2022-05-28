@@ -27,12 +27,6 @@ SetKeyDelay -1
 Send, {Escape}
 Return
 
-;無変換 + Space = Enter
-vk1D & Space:: SendKeyDown("Enter")
-
-;Capslock無効
-vkF0:: Return
-
 ;無変換でIMEオフ
 ;下の行を消すとなぜか動かなくなる。日本語のコメントが直前にあると動かなくなる？
 ;x
@@ -46,9 +40,6 @@ vk1C:: Send, {vk16}
 
 ;フィードバックHub
 #f:: Return
-
-;ゲームバー
-#g:: Return
 
 
 ;渡されたキーを入力する。Blindを付加しているので、修飾キー(ShiftやCtrl)と同時に押すことも可能。

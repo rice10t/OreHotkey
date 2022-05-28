@@ -1,4 +1,4 @@
-;無変換 + hjkl = ←↓↑→
+﻿;無変換 + hjkl = ←↓↑→
 vk1D & h::SendKeyDown("Left")
 vk1D & j::SendKeyDown("Down")
 vk1D & k::SendKeyDown("Up")
@@ -28,8 +28,6 @@ Send, {Escape}
 return
 
 ;無変換でIMEオフ
-;下の行を消すとなぜか動かなくなる。日本語のコメントが直前にあると動かなくなる？
-;x
 vk1D::Send, {vk1A}
 
 ;変換でIMEオン

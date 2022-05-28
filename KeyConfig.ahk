@@ -1,5 +1,3 @@
-#include IME.ahk
-
 ;無変換 + hjkl = ←↓↑→
 vk1D & h:: SendKeyDown("Left")
 vk1D & j:: SendKeyDown("Down")
@@ -36,10 +34,12 @@ vk1D & Space:: SendKeyDown("Enter")
 vkF0:: Return
 
 ;無変換でIMEオフ
-vk1D:: IME_Set(0)
+;下の行を消すとなぜか動かなくなる。日本語のコメントが直前にあると動かなくなる？
+;x
+vk1D:: Send, {vk1A}
 
 ;変換でIMEオン
-vk1C:: IME_Set(1)
+vk1C:: Send, {vk16}
 
 
 ;Windowsショートカットを無効化
